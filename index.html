@@ -7,44 +7,68 @@
 <title>Mapa do Bolso</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="topo">
-    <h1 class="marca">Mapa do <span>Bolso</span></h1>
-    <span class="data" id="data">carregando…</span>
+<div class="pagina">
+  <header class="cabeca">
+    <h1 class="marca">Mapa do Bolso</h1>
+    <span class="edicao mono" id="edicao"></span>
   </header>
 
-  <section class="minuto" aria-labelledby="t-minuto">
-    <div class="minuto-cab">
-      <h2 id="t-minuto">O minuto do dia</h2>
-      <span class="selo">leitura de 1 min</span>
-    </div>
-    <ul class="lista-minuto" id="lista-minuto"></ul>
-    <p class="de-olho" id="de-olho"></p>
+  <section class="lead" aria-label="Resumo da edição">
+    <h2 id="manchete">Carregando a edição de hoje…</h2>
+    <p id="linha-fina"></p>
+    <div class="curadoria mono" id="curadoria"></div>
   </section>
 
-  <main class="principal">
+  <section class="secao" aria-labelledby="t-bolso">
+    <div class="secao-cab">
+      <h2 id="t-bolso">O que muda no seu bolso</h2>
+      <p>Cada linha é um gasto ou rendimento do dia a dia. O número ao lado leva ao fato que explica o efeito.</p>
+    </div>
+    <div class="rolagem">
+      <table class="bolso">
+        <thead><tr><th scope="col"><span class="sr">Item</span></th><th scope="col">Nas próximas semanas</th><th scope="col">Nos próximos meses</th><th scope="col">Em um ano ou mais</th></tr></thead>
+        <tbody id="bolso-corpo"></tbody>
+      </table>
+    </div>
+    <p class="leitura">Em <span class="pesa">vermelho</span>, o que pesa no orçamento. Em <span class="alivia">verde</span>, o que alivia. A seta mostra se o preço ou a taxa sobe, cai ou fica parado.</p>
+  </section>
+
+  <section class="secao" aria-labelledby="t-fatos">
+    <div class="secao-cab">
+      <h2 id="t-fatos">Os fatos, da causa ao efeito</h2>
+      <p>Onde aconteceu e como cada fato chega até você. Clique num país ou num número para ir direto à explicação.</p>
+    </div>
     <div class="mapa-box">
-      <svg id="mapa" role="img" aria-label="Mapa-múndi com os países que têm notícias hoje"></svg>
-      <span class="instrucao">Arraste e use a rolagem para dar zoom. Clique num país colorido.</span>
-      <div class="controles">
+      <svg id="mapa" role="img" aria-label="Mapa-múndi com os países das notícias de hoje, numerados como os fatos abaixo"></svg>
+      <div class="zoom">
         <button type="button" id="zoom-mais" aria-label="Aproximar">+</button>
         <button type="button" id="zoom-menos" aria-label="Afastar">−</button>
-        <button type="button" id="zoom-reset" aria-label="Ver o mundo inteiro">⌂</button>
+        <button type="button" id="zoom-reset" aria-label="Ver o mundo inteiro">↺</button>
       </div>
-      <div class="legenda" aria-hidden="true">
-        <span>Relevância para o Brasil</span>
-        <span class="escala"><i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i></span>
-      </div>
-      <div class="dica" id="dica" hidden></div>
     </div>
-    <aside class="painel" id="painel" aria-live="polite"></aside>
-  </main>
+    <div class="fatos" id="fatos"></div>
+  </section>
 
-  <p class="aviso">Conteúdo informativo e educacional, gerado com apoio de inteligência artificial a partir de notícias públicas. Não constitui recomendação de investimento. Os impactos são cenários prováveis, não previsões garantidas.</p>
+  <section class="secao" aria-labelledby="t-olho">
+    <div class="secao-cab">
+      <h2 id="t-olho">Na agenda</h2>
+      <p id="de-olho"></p>
+    </div>
+  </section>
+
+  <footer class="metodo">
+    <h2>Como esta edição é feita</h2>
+    <ol>
+      <li>Lemos as notícias econômicas do dia em veículos brasileiros e internacionais.</li>
+      <li>Juntamos as que falam do mesmo fato e ficamos com as mais relevantes para o Brasil.</li>
+      <li>Cada fato é explicado por prazo, sempre com as fontes à mostra e um grau de confiança. Números só entram se estiverem nas fontes.</li>
+    </ol>
+    <p class="aviso">Conteúdo informativo e educacional, produzido com apoio de inteligência artificial a partir de notícias públicas. Não é recomendação de investimento. Os efeitos descritos são cenários prováveis, não previsões garantidas.</p>
+  </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>

@@ -19,6 +19,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 MODELO = os.environ.get("MODELO_IA", "claude-sonnet-5-5")
 FUSO = ZoneInfo("America/Sao_Paulo")
 MAX_NOTICIAS = 60
+ITENS_BOLSO = {"credito", "renda_fixa", "dolar", "combustivel", "alimentos", "energia", "emprego"}
 
 # Fontes de notícias (RSS). Guardamos só título, resumo curto e link.
 FEEDS = [
@@ -113,13 +114,23 @@ def validar(bruto: dict, noticias: list[dict]) -> dict:
             "confianca": conf if conf in ("alto", "médio", "baixo") else "médio",
             "justificativa_confianca": n.get("justificativa_confianca", ""),
             "relevancia": max(1, min(10, int(n.get("relevancia", 5)))),
+            "bolso": [
+                {k: str(b.get(k, "")) for k in ("item", "prazo", "direcao", "efeito", "texto")}
+                for b in n.get("bolso", [])
+                if b.get("item") in ITENS_BOLSO and b.get("prazo") in ("semanas", "meses", "longo_prazo")
+                and b.get("efeito") in ("pesa", "alivia", "neutro") and b.get("texto")
+            ][:4],
             "fontes": fontes,
         })
-    ids = {n["id"] for n in saida}
-    itens = [i for i in bruto.get("resumo", {}).get("itens", []) if i.get("noticia") in ids][:5]
-    if not saida or not itens:
-        raise ValueError("A análise veio vazia ou sem fontes válidas; mantendo a edição anterior.")
-    return {"resumo": {"itens": itens, "de_olho": bruto.get("resumo", {}).get("de_olho", "")}, "noticias": saida}
+    resumo = bruto.get("resumo", {})
+    if len(saida) < 3 or not resumo.get("manchete"):
+        raise ValueError("A análise veio incompleta ou sem fontes válidas; mantendo a edição anterior.")
+    saida.sort(key=lambda n: -n["relevancia"])
+    return {
+        "curadoria": {"noticias_lidas": len(noticias), "fontes_lidas": len({n["fonte"] for n in noticias})},
+        "resumo": {k: resumo.get(k, "") for k in ("manchete", "linha_fina", "de_olho")},
+        "noticias": saida,
+    }
 
 
 def main() -> None:

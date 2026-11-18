@@ -1,31 +1,14 @@
 {
   "data": "2026-11-18",
   "gerado_em": "2026-11-18T09:58:00-03:00",
-  "origem": "primeira edição montada à mão a partir de notícias reais; as próximas serão geradas pelo script diário",
+  "curadoria": {
+    "noticias_lidas": 9,
+    "fontes_lidas": 7
+  },
   "resumo": {
-    "itens": [
-      {
-        "noticia": "076",
-        "texto": "O Banco Central segurou a Selic em 13,75% e interrompeu os cortes. Financiamentos e cartão param de ficar mais baratos, e a renda fixa continua rendendo bem nos próximos meses."
-      },
-      {
-        "noticia": "840",
-        "texto": "O Fed, banco central dos EUA, sinaliza que pode subir juros em dezembro. Isso tende a fortalecer o dólar nas próximas semanas e encarecer viagem e produtos importados."
-      },
-      {
-        "noticia": "364",
-        "texto": "O petróleo caiu para perto de US$ 92 mesmo com ataques do Irã a petroleiros. Se a queda durar, diminui a pressão por aumento de gasolina e diesel nos próximos meses."
-      },
-      {
-        "noticia": "156",
-        "texto": "A economia chinesa desacelerou em outubro e o Brasil vendeu menos para a China. Menos demanda chinesa pode significar menos dólares entrando aqui ao longo dos próximos meses."
-      },
-      {
-        "noticia": "076b",
-        "texto": "O El Niño segue no radar do agro e do Banco Central. O efeito maior em alimentos e na conta de luz é esperado entre o fim deste ano e 2027."
-      }
-    ],
-    "de_olho": "Fique de olho: a OPEP+ decide a produção de petróleo para 2027 em 29 de novembro, e o Fed se reúne em 8 e 9 de dezembro."
+    "de_olho": "29 de novembro: a OPEP+ decide a produção de petróleo para 2027. 8 e 9 de dezembro: reunião do Fed.",
+    "manchete": "Juros altos aqui e nos EUA mantêm o crédito caro. O alívio vem do petróleo.",
+    "linha_fina": "O Banco Central parou de cortar a Selic e o Fed pode subir juros em dezembro. Do outro lado, o barril mais barato tira pressão dos combustíveis."
   },
   "noticias": [
     {
@@ -57,6 +40,36 @@
         {
           "nome": "Tribuna do Sertão (ata)",
           "url": "https://www.tribunadosertao.com.br/geral/2026/11/10/1017711-ata-do-copom-indica-cenario-de-incertezas-e-selic-contracionista"
+        }
+      ],
+      "bolso": [
+        {
+          "item": "credito",
+          "prazo": "semanas",
+          "direcao": "estável",
+          "efeito": "pesa",
+          "texto": "Taxas param de cair"
+        },
+        {
+          "item": "renda_fixa",
+          "prazo": "semanas",
+          "direcao": "estável",
+          "efeito": "alivia",
+          "texto": "Segue rendendo bem"
+        },
+        {
+          "item": "credito",
+          "prazo": "meses",
+          "direcao": "estável",
+          "efeito": "pesa",
+          "texto": "Parcelas seguem caras"
+        },
+        {
+          "item": "emprego",
+          "prazo": "longo_prazo",
+          "direcao": "cai",
+          "efeito": "pesa",
+          "texto": "Contratações podem esfriar"
         }
       ]
     },
@@ -90,6 +103,29 @@
           "nome": "TV Sim Brasil",
           "url": "https://tvsimbrasil.com.br/brasil/economia/noticia/2026/11/17/fed-mantem-juros-estados-unidos-sinaliza-nova-alta"
         }
+      ],
+      "bolso": [
+        {
+          "item": "dolar",
+          "prazo": "semanas",
+          "direcao": "sobe",
+          "efeito": "pesa",
+          "texto": "Dólar mais volátil"
+        },
+        {
+          "item": "dolar",
+          "prazo": "meses",
+          "direcao": "sobe",
+          "efeito": "pesa",
+          "texto": "Importados mais caros"
+        },
+        {
+          "item": "credito",
+          "prazo": "meses",
+          "direcao": "estável",
+          "efeito": "pesa",
+          "texto": "Menos espaço para cortar a Selic"
+        }
       ]
     },
     {
@@ -121,6 +157,29 @@
         {
           "nome": "The Officer",
           "url": "https://theofficer.es/precio-del-brent-hoy-17-de-noviembre-cae-con-fuerza-un-418-hasta-9181-dolares/"
+        }
+      ],
+      "bolso": [
+        {
+          "item": "combustivel",
+          "prazo": "semanas",
+          "direcao": "cai",
+          "efeito": "alivia",
+          "texto": "Menos pressão por reajuste"
+        },
+        {
+          "item": "alimentos",
+          "prazo": "meses",
+          "direcao": "estável",
+          "efeito": "alivia",
+          "texto": "Frete mais estável"
+        },
+        {
+          "item": "combustivel",
+          "prazo": "longo_prazo",
+          "direcao": "oscila",
+          "efeito": "neutro",
+          "texto": "Depende da guerra e da OPEP+"
         }
       ]
     },
@@ -154,6 +213,22 @@
           "nome": "BP Money",
           "url": "https://bpmoney.com.br/economia/exportacoes-brasil-china-caem-outubro-2026/"
         }
+      ],
+      "bolso": [
+        {
+          "item": "dolar",
+          "prazo": "meses",
+          "direcao": "sobe",
+          "efeito": "pesa",
+          "texto": "Menos dólares entrando"
+        },
+        {
+          "item": "emprego",
+          "prazo": "longo_prazo",
+          "direcao": "cai",
+          "efeito": "pesa",
+          "texto": "Indústria sob pressão"
+        }
       ]
     },
     {
@@ -181,6 +256,29 @@
         {
           "nome": "Exame Agro",
           "url": "https://exame.com/agro/el-nino-pode-elevar-a-inflacao-dos-alimentos-e-pressionar-o-ipca-em-2027/"
+        }
+      ],
+      "bolso": [
+        {
+          "item": "alimentos",
+          "prazo": "semanas",
+          "direcao": "oscila",
+          "efeito": "neutro",
+          "texto": "Hortifrúti varia com o clima"
+        },
+        {
+          "item": "energia",
+          "prazo": "meses",
+          "direcao": "sobe",
+          "efeito": "pesa",
+          "texto": "Bandeira mais cara se faltar chuva"
+        },
+        {
+          "item": "alimentos",
+          "prazo": "longo_prazo",
+          "direcao": "sobe",
+          "efeito": "pesa",
+          "texto": "Alimentos mais caros em 2027"
         }
       ]
     }
