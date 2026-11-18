@@ -7,68 +7,33 @@
 <title>Mapa do Bolso</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="pagina">
-  <header class="cabeca">
+  <header class="topo">
     <h1 class="marca">Mapa do Bolso</h1>
-    <span class="edicao mono" id="edicao"></span>
+    <span id="data"></span>
   </header>
 
-  <section class="lead" aria-label="Resumo da edição">
+  <section class="lead">
     <h2 id="manchete">Carregando a edição de hoje…</h2>
     <p id="linha-fina"></p>
-    <div class="curadoria mono" id="curadoria"></div>
+    <p id="agenda"></p>
   </section>
 
-  <section class="secao" aria-labelledby="t-bolso">
-    <div class="secao-cab">
-      <h2 id="t-bolso">O que muda no seu bolso</h2>
-      <p>Cada linha é um gasto ou rendimento do dia a dia. O número ao lado leva ao fato que explica o efeito.</p>
+  <main class="palco">
+    <svg id="mapa" role="img" aria-label="Mapa-múndi com os países das notícias de hoje. Clique num país para ler o fato."></svg>
+    <div class="zoom">
+      <button type="button" id="zoom-mais" aria-label="Aproximar">+</button>
+      <button type="button" id="zoom-menos" aria-label="Afastar">−</button>
+      <button type="button" id="zoom-reset" aria-label="Ver o mundo inteiro">↺</button>
     </div>
-    <div class="rolagem">
-      <table class="bolso">
-        <thead><tr><th scope="col"><span class="sr">Item</span></th><th scope="col">Nas próximas semanas</th><th scope="col">Nos próximos meses</th><th scope="col">Em um ano ou mais</th></tr></thead>
-        <tbody id="bolso-corpo"></tbody>
-      </table>
-    </div>
-    <p class="leitura">Em <span class="pesa">vermelho</span>, o que pesa no orçamento. Em <span class="alivia">verde</span>, o que alivia. A seta mostra se o preço ou a taxa sobe, cai ou fica parado.</p>
-  </section>
+    <div class="balao" id="balao" role="dialog" aria-labelledby="balao-titulo" hidden></div>
+  </main>
 
-  <section class="secao" aria-labelledby="t-fatos">
-    <div class="secao-cab">
-      <h2 id="t-fatos">Os fatos, da causa ao efeito</h2>
-      <p>Onde aconteceu e como cada fato chega até você. Clique num país ou num número para ir direto à explicação.</p>
-    </div>
-    <div class="mapa-box">
-      <svg id="mapa" role="img" aria-label="Mapa-múndi com os países das notícias de hoje, numerados como os fatos abaixo"></svg>
-      <div class="zoom">
-        <button type="button" id="zoom-mais" aria-label="Aproximar">+</button>
-        <button type="button" id="zoom-menos" aria-label="Afastar">−</button>
-        <button type="button" id="zoom-reset" aria-label="Ver o mundo inteiro">↺</button>
-      </div>
-    </div>
-    <div class="fatos" id="fatos"></div>
-  </section>
-
-  <section class="secao" aria-labelledby="t-olho">
-    <div class="secao-cab">
-      <h2 id="t-olho">Na agenda</h2>
-      <p id="de-olho"></p>
-    </div>
-  </section>
-
-  <footer class="metodo">
-    <h2>Como esta edição é feita</h2>
-    <ol>
-      <li>Lemos as notícias econômicas do dia em veículos brasileiros e internacionais.</li>
-      <li>Juntamos as que falam do mesmo fato e ficamos com as mais relevantes para o Brasil.</li>
-      <li>Cada fato é explicado por prazo, sempre com as fontes à mostra e um grau de confiança. Números só entram se estiverem nas fontes.</li>
-    </ol>
-    <p class="aviso">Conteúdo informativo e educacional, produzido com apoio de inteligência artificial a partir de notícias públicas. Não é recomendação de investimento. Os efeitos descritos são cenários prováveis, não previsões garantidas.</p>
-  </footer>
+  <p class="aviso">Conteúdo informativo, produzido com apoio de IA a partir de notícias públicas. Não é recomendação de investimento.</p>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>

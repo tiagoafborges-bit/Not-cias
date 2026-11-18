@@ -1,6 +1,6 @@
 # Mapa do Bolso
 
-As notícias do mundo que mexem com o seu bolso, explicadas em um minuto. Um mapa-múndi clicável mostra, por país, o que aconteceu e como isso chega até você nas próximas semanas, nos próximos meses e em um ano ou mais.
+As notícias do mundo que mexem com o seu bolso, explicadas em um minuto. O mapa é a interface: cada país com notícia abre um balão com o fato, o porquê e como ele chega até você nas próximas semanas, nos próximos meses e em um ano ou mais.
 
 ## Como funciona
 
