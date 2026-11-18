@@ -1,0 +1,188 @@
+{
+  "data": "2026-11-18",
+  "gerado_em": "2026-11-18T09:58:00-03:00",
+  "origem": "primeira edição montada à mão a partir de notícias reais; as próximas serão geradas pelo script diário",
+  "resumo": {
+    "itens": [
+      {
+        "noticia": "076",
+        "texto": "O Banco Central segurou a Selic em 13,75% e interrompeu os cortes. Financiamentos e cartão param de ficar mais baratos, e a renda fixa continua rendendo bem nos próximos meses."
+      },
+      {
+        "noticia": "840",
+        "texto": "O Fed, banco central dos EUA, sinaliza que pode subir juros em dezembro. Isso tende a fortalecer o dólar nas próximas semanas e encarecer viagem e produtos importados."
+      },
+      {
+        "noticia": "364",
+        "texto": "O petróleo caiu para perto de US$ 92 mesmo com ataques do Irã a petroleiros. Se a queda durar, diminui a pressão por aumento de gasolina e diesel nos próximos meses."
+      },
+      {
+        "noticia": "156",
+        "texto": "A economia chinesa desacelerou em outubro e o Brasil vendeu menos para a China. Menos demanda chinesa pode significar menos dólares entrando aqui ao longo dos próximos meses."
+      },
+      {
+        "noticia": "076b",
+        "texto": "O El Niño segue no radar do agro e do Banco Central. O efeito maior em alimentos e na conta de luz é esperado entre o fim deste ano e 2027."
+      }
+    ],
+    "de_olho": "Fique de olho: a OPEP+ decide a produção de petróleo para 2027 em 29 de novembro, e o Fed se reúne em 8 e 9 de dezembro."
+  },
+  "noticias": [
+    {
+      "id": "076",
+      "pais": "076",
+      "pais_nome": "Brasil",
+      "titulo_curto": "Banco Central para de cortar juros",
+      "categoria": "Juros",
+      "fato": "O Copom manteve a Selic em 13,75% ao ano em 4 de novembro, por unanimidade, contrariando quem esperava mais um corte de 0,25 ponto. Foi a primeira pausa depois de cinco cortes seguidos desde abril.",
+      "por_que_importa": [
+        "Inflação em 12 meses subiu para 4,62%, acima do teto da meta (4,5%)",
+        "Banco Central vê mais incerteza: dólar, El Niño e guerra no Oriente Médio",
+        "Juros param de cair para segurar os preços"
+      ],
+      "impacto": {
+        "semanas": "Bancos tendem a parar de baixar as taxas de financiamento, empréstimo e cartão. CDB, Tesouro Selic e poupança seguem rendendo no patamar atual.",
+        "meses": "Crédito continua caro, o que pesa na parcela de carro, imóvel e no cartão parcelado. Quem pensava em financiar algo pode encontrar condições parecidas com as de hoje, não melhores.",
+        "longo_prazo": "Juros altos por mais tempo ajudam a trazer a inflação de volta para a meta, mas esfriam o consumo, o investimento das empresas e a geração de empregos."
+      },
+      "virada": "Segurar os juros protege o poder de compra contra a inflação agora, mas pode frear a economia e o emprego em 2027.",
+      "confianca": "alto",
+      "justificativa_confianca": "A decisão já foi tomada e a ata do Copom confirmou o tom de cautela.",
+      "relevancia": 10,
+      "fontes": [
+        {
+          "nome": "Tribuna do Sertão",
+          "url": "https://www.tribunadosertao.com.br/geral/2026/11/04/1013760-banco-central-surpreende-e-mantem-juros-basicos-em-1375-ao-ano"
+        },
+        {
+          "nome": "Tribuna do Sertão (ata)",
+          "url": "https://www.tribunadosertao.com.br/geral/2026/11/10/1017711-ata-do-copom-indica-cenario-de-incertezas-e-selic-contracionista"
+        }
+      ]
+    },
+    {
+      "id": "840",
+      "pais": "840",
+      "pais_nome": "Estados Unidos",
+      "titulo_curto": "Fed sinaliza alta de juros em dezembro",
+      "categoria": "Juros e dólar",
+      "fato": "O Federal Reserve, banco central dos EUA, pode subir os juros na reunião de 8 e 9 de dezembro. A taxa está entre 3,75% e 4% ao ano, e um dos diretores defende alta de 0,5 ponto, enquanto o mercado vê 0,25 como mais provável.",
+      "por_que_importa": [
+        "Juros mais altos nos EUA atraem dinheiro do mundo todo para lá",
+        "Sai dinheiro de países como o Brasil",
+        "Dólar tende a subir em relação ao real"
+      ],
+      "impacto": {
+        "semanas": "O dólar pode ficar mais volátil e subir até a decisão. Quem vai viajar para fora ou comprar algo em dólar sente primeiro.",
+        "meses": "Dólar mais caro chega a eletrônicos, remédios, peças e combustíveis importados. Isso também dá menos espaço para o Banco Central brasileiro voltar a cortar a Selic.",
+        "longo_prazo": "Crédito mais caro no mundo pode desacelerar a economia global, o que reduz a demanda pelo que o Brasil exporta."
+      },
+      "virada": "Se o Fed subir menos do que o mercado espera, o dólar pode até cair depois da reunião.",
+      "confianca": "médio",
+      "justificativa_confianca": "A alta ainda não foi decidida e há pressão política do governo dos EUA por juros menores.",
+      "relevancia": 8,
+      "fontes": [
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/economia/noticia/2026/11/16/fed-warsh-alta-juros-dezembro-apesar-trump"
+        },
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/economia/noticia/2026/11/17/fed-mantem-juros-estados-unidos-sinaliza-nova-alta"
+        }
+      ]
+    },
+    {
+      "id": "364",
+      "pais": "364",
+      "pais_nome": "Irã",
+      "titulo_curto": "Petróleo cai mesmo com ataques a petroleiros",
+      "categoria": "Petróleo",
+      "fato": "O barril do Brent caiu para pouco abaixo de US$ 92 em 17 de novembro, mesmo após a marinha iraniana afirmar ter atingido quatro petroleiros em 24 horas. A Agência Internacional de Energia prevê sobra de petróleo no mercado neste fim de ano.",
+      "por_que_importa": [
+        "Exportações do Oriente Médio voltam a crescer mais rápido que a procura",
+        "Mais oferta que demanda puxa o preço do barril para baixo",
+        "Petróleo mais barato reduz o custo de combustíveis no mundo"
+      ],
+      "impacto": {
+        "semanas": "Diminui a pressão para a Petrobras reajustar gasolina e diesel para cima. Na bomba, o efeito costuma demorar e nem sempre aparece.",
+        "meses": "Se o barril continuar mais baixo, frete e passagens aéreas tendem a ficar mais estáveis, o que ajuda a segurar a inflação e o preço do supermercado.",
+        "longo_prazo": "Depende da guerra e da decisão da OPEP+ em 29 de novembro. Um corte de produção pode inverter a tendência."
+      },
+      "virada": "O risco da guerra continua no preço: um novo ataque grave no Estreito de Ormuz pode fazer o petróleo subir rápido de novo.",
+      "confianca": "médio",
+      "justificativa_confianca": "A tendência de queda é clara, mas o conflito e a OPEP+ podem mudar o cenário em poucos dias.",
+      "relevancia": 8,
+      "fontes": [
+        {
+          "nome": "Euribor.com.es",
+          "url": "https://www.euribor.com.es/2026/11/17/precio-petroleo-hoy-17-noviembre-2026/"
+        },
+        {
+          "nome": "The Officer",
+          "url": "https://theofficer.es/precio-del-brent-hoy-17-de-noviembre-cae-con-fuerza-un-418-hasta-9181-dolares/"
+        }
+      ]
+    },
+    {
+      "id": "156",
+      "pais": "156",
+      "pais_nome": "China",
+      "titulo_curto": "China desacelera e compra menos do Brasil",
+      "categoria": "Comércio exterior",
+      "fato": "Em outubro, as vendas no varejo chinês subiram só 0,4% e a produção industrial 4,8%, ambas abaixo do esperado, e o investimento caiu 8,1% no ano. No mesmo mês, o Brasil exportou 5,3% menos para a China e importou 17,1% mais de lá.",
+      "por_que_importa": [
+        "China é a maior compradora de minério, soja e petróleo do Brasil",
+        "Economia chinesa mais fraca compra menos e paga menos",
+        "Entram menos dólares no Brasil"
+      ],
+      "impacto": {
+        "semanas": "Preço do minério de ferro e de outras matérias-primas tende a oscilar, afetando empresas exportadoras e a bolsa brasileira.",
+        "meses": "Menos dólares entrando pode enfraquecer o real. Ao mesmo tempo, produtos chineses mais baratos chegam em maior volume, bom para o consumidor e difícil para a indústria nacional.",
+        "longo_prazo": "Reforça o risco de o Brasil depender demais de um único comprador para suas principais exportações."
+      },
+      "virada": "",
+      "confianca": "médio",
+      "justificativa_confianca": "Os dados são oficiais, mas o efeito sobre o Brasil depende de como a China reagir com estímulos.",
+      "relevancia": 7,
+      "fontes": [
+        {
+          "nome": "A Crítica",
+          "url": "https://acritica.net/economia/china-varejo-producao-industrial-desaceleram-outubro/"
+        },
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/economia/exportacoes-brasil-china-caem-outubro-2026/"
+        }
+      ]
+    },
+    {
+      "id": "076b",
+      "pais": "076",
+      "pais_nome": "Brasil",
+      "titulo_curto": "El Niño ameaça alimentos e conta de luz",
+      "categoria": "Clima e agro",
+      "fato": "O El Niño, aquecimento das águas do Pacífico, foi citado pelo Banco Central como fonte de incerteza. A FGV Agro projeta impacto nos preços de alimentos maior em 2027 do que em 2026.",
+      "por_que_importa": [
+        "Chuva demais no Sul e seca no Norte e Nordeste",
+        "Safras de grãos, frutas e hortaliças rendem menos",
+        "Milho e soja mais caros encarecem ração, leite e carnes"
+      ],
+      "impacto": {
+        "semanas": "Hortaliças e frutas podem oscilar de preço conforme o clima de cada região.",
+        "meses": "Se faltar chuva nas hidrelétricas, entram termelétricas, que são mais caras, e a conta de luz pode subir. O pico desse risco é previsto entre o fim de 2026 e o início de 2027.",
+        "longo_prazo": "Alimentos mais caros em 2027 podem manter a inflação alta e os juros elevados por mais tempo."
+      },
+      "virada": "",
+      "confianca": "baixo",
+      "justificativa_confianca": "Previsões climáticas mudam muito, e safras recordes podem compensar parte do efeito.",
+      "relevancia": 7,
+      "fontes": [
+        {
+          "nome": "Exame Agro",
+          "url": "https://exame.com/agro/el-nino-pode-elevar-a-inflacao-dos-alimentos-e-pressionar-o-ipca-em-2027/"
+        }
+      ]
+    }
+  ]
+}

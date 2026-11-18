@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="As notícias do mundo que mexem com o seu bolso, explicadas em um minuto.">
+<title>Mapa do Bolso</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="topo">
+    <h1 class="marca">Mapa do <span>Bolso</span></h1>
+    <span class="data" id="data">carregando…</span>
+  </header>
+
+  <section class="minuto" aria-labelledby="t-minuto">
+    <div class="minuto-cab">
+      <h2 id="t-minuto">O minuto do dia</h2>
+      <span class="selo">leitura de 1 min</span>
+    </div>
+    <ul class="lista-minuto" id="lista-minuto"></ul>
+    <p class="de-olho" id="de-olho"></p>
+  </section>
+
+  <main class="principal">
+    <div class="mapa-box">
+      <svg id="mapa" role="img" aria-label="Mapa-múndi com os países que têm notícias hoje"></svg>
+      <span class="instrucao">Arraste e use a rolagem para dar zoom. Clique num país colorido.</span>
+      <div class="controles">
+        <button type="button" id="zoom-mais" aria-label="Aproximar">+</button>
+        <button type="button" id="zoom-menos" aria-label="Afastar">−</button>
+        <button type="button" id="zoom-reset" aria-label="Ver o mundo inteiro">⌂</button>
+      </div>
+      <div class="legenda" aria-hidden="true">
+        <span>Relevância para o Brasil</span>
+        <span class="escala"><i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i></span>
+      </div>
+      <div class="dica" id="dica" hidden></div>
+    </div>
+    <aside class="painel" id="painel" aria-live="polite"></aside>
+  </main>
+
+  <p class="aviso">Conteúdo informativo e educacional, gerado com apoio de inteligência artificial a partir de notícias públicas. Não constitui recomendação de investimento. Os impactos são cenários prováveis, não previsões garantidas.</p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
